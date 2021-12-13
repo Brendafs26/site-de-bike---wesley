@@ -1,0 +1,92 @@
+body {
+	margin:0; /* SEMPRE COLOCA ISSO */
+	padding:0;
+}
+header {
+	display:flex; /* para um item ficar um do lado do outro / e poder ficar alinhado*/
+    justify-content:center; /* para fica no centro */
+	height:120px; /* O altura DO HEADER */
+}
+.container { 
+	display:flex; /* PARA SER TRATADO COMO FLEX */
+	justify-content:space-between; /* PARA FICAR UM LONGE DO OUTRO , CADA UM NO SEU CANTO*/
+	width:990px; /*largura */
+}
+
+.menu {
+	display:flex; /* PARA FICAR UM DO LADO DO OUTRO */
+	align-items:center; /* PARA FICAR NO CENTRO */
+    margin-left: 400px;
+}
+
+.logo{
+   display:block;
+   align-items: center;
+}
+nav ul, /* menu responsivo */
+nav li {
+	list-style: none;  /*  para tirar os potinhos da lista  */
+	margin:0;
+	padding:0;
+}
+
+nav ul {
+	display:flex; /* para ficar um do lado do outro */
+}
+nav a {
+	display:flex; /* para gente consegui alterar tamanho e ficar em bloco*/
+	padding:15px;/* espaço entre as palvras */
+	text-decoration:none; /* sem decoração nehuma  */
+	text-transform:uppercase; /* letra maiuscula */
+	color:#727272; /* cor da letras */
+}
+nav a:hover { /* para passar o mouse e aplicar essa configuração */
+	
+	color:#0c0101; /* cor da letra */
+}
+
+.principal{
+	padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.mapa{
+	margin-right: 30px;
+}
+
+.text h1{
+	max-width: 500px;
+	font-size: 35px;
+}
+
+.primeiro{
+	max-width: 500px;
+	font-size: 18px;
+}
+.p{
+	max-width: 200px;
+}
+
+
+.linha::before{
+    content: '';
+    display: flex;
+    margin: auto;
+    width:1200px;
+    height: 1px;
+    background:  rgb(211, 211, 211);
+	margin-top: 300px;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p{
+    color:  rgba(116, 110, 110, 0.719);
+    
+}

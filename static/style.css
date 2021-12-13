@@ -1,0 +1,194 @@
+body {
+	margin:0; /* SEMPRE COLOCA ISSO */
+	padding:0;
+}
+header {
+	display:flex; /* para um item ficar um do lado do outro / e poder ficar alinhado*/
+    justify-content:center; /* para fica no centro */
+	height:120px; /* O altura DO HEADER */
+}
+.container { 
+	display:flex; /* PARA SER TRATADO COMO FLEX */
+	justify-content:space-between; /* PARA FICAR UM LONGE DO OUTRO , CADA UM NO SEU CANTO*/
+	width:990px; /*largura */
+}
+
+.menu {
+	display:flex; /* PARA FICAR UM DO LADO DO OUTRO */
+	align-items:center; /* PARA FICAR NO CENTRO */
+    margin-left: 400px;
+    padding-top: 40px;
+    height:5px; /* O altura DO HEADER */
+}
+
+.logo{
+   display:block;
+   align-items: center;
+}
+nav ul, /* menu responsivo */
+nav li {
+	list-style: none;  /*  para tirar os potinhos da lista  */
+	margin:0;
+	padding:0;
+}
+
+nav ul {
+	display:flex; /* para ficar um do lado do outro */
+}
+nav a {
+	display:flex; /* para gente consegui alterar tamanho e ficar em bloco*/
+	padding:15px;/* espaço entre as palvras */
+	text-decoration:none; /* sem decoração nehuma  */
+    font-size:min(px, 2vw);
+	text-transform:uppercase; /* letra maiuscula */
+	color:#727272; /* cor da letras */
+}
+nav a:hover { /* para passar o mouse e aplicar essa configuração */
+	
+	color:#0c0101; /* cor da letra */
+}
+
+.principal{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.segunda{
+  display:flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+
+
+.texto{
+    font-size:min(40px, 3vw);
+    line-height:50px;
+    max-width: 550px;
+}
+.texto_1{
+    font-size:min(40px, 3vw);
+    line-height:50px;
+    max-width: 800px;
+    margin-left: 90px;
+}
+.p{
+    margin-left: 30px;
+    font-size:min(20px, 2vw);
+   max-width: 600px;
+   color: dimgrey;
+}
+
+.terceira{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.final_1{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.final_1 h1{
+    font-size:min(40px, 3vw);
+}
+
+button{
+    width: 180px;
+    height: 50px;
+    color: dimgrey;
+    background-color: rgba(253, 253, 253, 0.719);
+    border: 1px solid  rgba(155, 153, 153, 0.719);
+}
+
+button:hover{
+    color: black;
+    border: 1px solid black;
+}
+
+.linha::before{
+    content: '';
+    display: flex;
+    margin: auto;
+    width:1200px;
+    height: 1px;
+    background:  rgb(211, 211, 211);
+    margin-top:50px;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p{
+    color:  rgba(116, 110, 110, 0.719);
+    
+}
+
+@media (min-width:450px) and (max-width:800px) {
+
+    header {
+        display:flex; /* para um item ficar um do lado do outro / e poder ficar alinhado*/
+        justify-content:center; /* para fica no centro */
+        height:100px; /* O altura DO HEADER */
+    }
+    .container { 
+        display:flex; /* PARA SER TRATADO COMO FLEX */
+        justify-content:space-between; /* PARA FICAR UM LONGE DO OUTRO , CADA UM NO SEU CANTO*/
+
+        width:100%; /*largura */
+    }
+    
+    .menu {
+        display:flex; /* PARA FICAR UM DO LADO DO OUTRO */
+        align-items:center; /* PARA FICAR NO CENTRO */
+        margin-left: 100px;
+        height: 5px;
+    }
+    
+    .logo{
+       display:block;
+       align-items: center;
+       margin-left: 50px;
+    }
+    nav ul, /* menu responsivo */
+    nav li {
+        list-style: none;  /*  para tirar os potinhos da lista  */
+        margin:0;
+        padding:0;
+    }
+    
+    nav ul {
+        display:flex; /* para ficar um do lado do outro */
+    }
+    nav a {
+        display:flex; /* para gente consegui alterar tamanho e ficar em bloco*/
+        padding:8px;/* espaço entre as palvras */
+        text-decoration:none; /* sem decoração nehuma  */
+        text-transform:uppercase; /* letra maiuscula */
+        color:#727272; /* cor da letras */
+        font-size: 13px;
+    }
+    nav a:hover { /* para passar o mouse e aplicar essa configuração */
+        
+        color:#0c0101; /* cor da letra */
+    }
+    
+    img{
+        height: 80%;
+        width: 80%;
+    }
+
+    h1 .segunda{
+        max-height: 1px;
+        max-width: 10px;
+    }
+  
+        
+   }
